@@ -1,0 +1,18 @@
+{
+  "budget": 2,
+  "bad_prev_code": "E_BAD_PREV",
+  "bad_term_code": "E_BAD_TERM",
+  "bad_items_code": "E_BAD_ITEMS",
+  "bad_seq_code": "E_BAD_SEQ",
+  "no_prev_code": "E_NO_PREV",
+  "no_entry_code": "E_NO_ENTRY",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "log": [], "rejects": [], "cut": 0, "gets": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "append", "prev": 0, "term": 1, "items": ["a"] },
+    { "id": 2, "kind": "append", "prev": 1, "term": 1, "items": ["b"] },
+    { "id": 3, "kind": "append", "prev": 1, "term": 2, "items": ["c"] },
+    { "id": 4, "kind": "append", "prev": 1, "term": 1, "items": ["x", "y"] },
+    { "id": 5, "kind": "get", "seq": 3 }
+  ]
+}
